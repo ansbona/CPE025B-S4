@@ -1,0 +1,82 @@
+/* Base styles */
+body {
+    font-family: 'Verdana', sans-serif; /* Changed to Verdana for a cleaner look */
+    font-size: 14px;
+    background-color: #fdfdfd;
+}
+
+/* Header styles - Using TWICE Official Apricot Color */
+header {
+    background-color: #FCC89B; 
+    padding: 30px;
+    text-align: center;
+}
+
+/* Section styles */
+section {
+    margin: 30px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px; /* Added rounded corners */
+}
+
+/* Footer styles - Using TWICE Official Apricot Color */
+footer {
+    background-color: #FCC89B;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Element selector */
+h2 {
+    color: #FF5FA2; /* TWICE Official Neon Magenta */
+    border-bottom: 2px solid #FF5FA2;
+    display: inline-block;
+}
+
+/* Class selector */
+.highlight {
+    background-color: #FF5FA2;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* ID selector */
+#header {
+    border-bottom: 4px solid #FF5FA2; /* Thicker Magenta border */
+}
+
+/* Attribute selector */
+a[href^="mailto:"] {
+    color: white;
+    text-decoration: none;
+    background-color: #FF5FA2;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+/* Pseudo-class selector */
+a:hover {
+    background-color: white;
+    color: #FF5FA2;
+    border: 1px solid #FF5FA2;
+}
+
+/* Pseudo-element selector - First line of paragraphs is bold */
+p::first-line {
+    font-weight: bold;
+    color: #FF5FA2; 
+}
+
+/* Combinator selector */
+header + main {
+    border-top: 1px solid #FCC89B;
+}
+
+/* Specificity Test: ID vs Inline */
+#header h1 {
+    color: #FF5FA2 !important; /* This attempts to turn title pink, but might fight with inline styles depending on context */
+}
