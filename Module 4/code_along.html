@@ -1,0 +1,89 @@
+<ul>
+    <li data-recipe-id="001">
+        <h2>Spaghetti with Meatballs</h2>
+        <p>A classic Italian dish that's perfect for a cozy night in.</p>
+        <button class="save-recipe">Save Recipe</button>
+    </li>
+    <li data-recipe-id="002">
+        <h2>Chicken Tikka Masala</h2>
+        <p>A flavorful Indian curry that's sure to please.</p>
+        <button class="save-recipe">Save Recipe</button>
+    </li>
+    <li data-recipe-id="003">
+        <h2>Beef and Broccoli Stir Fry</h2>
+        <p>A quick and easy weeknight dinner that's packed with flavor.</p>
+        <button class="save-recipe">Save Recipe</button>
+    </li>
+</ul>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebDev Solutions</title>
+  </head>
+  
+  <body>
+    <header>
+      <h1>Welcome to WebDev Solutions</h1>
+         <nav>
+            <ul>
+               <li><a href="\home">Home</a></li>
+               <li><a href="\about">About</a></li>
+               <li><a href="\services">Services</a></li>
+               <li><a href="\contact">Contact</a></li>
+            </ul>
+         </nav>
+    </header>
+    <main>
+      <article>
+        <h2>Our Services</h2>
+        <p>We offer a variety of services including web design, 
+           development, and digital marketing. 
+           Contact us to learn more!</p>
+      </article>
+      <article>
+        <h2>Our Customers</h2>
+        <p>Our customers are at the heart of everything we do. 
+           We pride ourselves on delivering exceptional service 
+           and building strong relationships with each and every 
+           one of our clients.</p>
+      </article>
+    </main>
+    <footer>
+      <p>© 2023 WebDev Solutions. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Geolocation Example</title>
+</head>
+<body>
+  <h1>Your Location</h1>
+  <p>Click the button to get your current location.</p>
+  
+  <button id="getLocation">Get Location</button>
+  
+  <p id="result"></p>
+  
+  <script>
+    const getLocationButton = document.getElementById('getLocation');
+    const resultElement = document.getElementById('result');
+    
+    getLocationButton.addEventListener('click', () => {
+      if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition((position) => {
+          const latitude = position.coords.latitude;
+          const longitude = position.coords.longitude;
+          resultElement.textContent = `Latitude: ${latitude}, Longitude: ${longitude}`;
+        });
+      } else {
+        resultElement.textContent = "Geolocation is not supported by your browser.";
+      }
+    });
+  </script>
+</body>
+</html>

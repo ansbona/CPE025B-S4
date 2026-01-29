@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TWICE</title>
+  <style>
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+
+    .options {
+      margin-top: 10px;
+    }
+
+    .options input {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      background: #fbceb1;
+      color: black;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+
+    }
+
+    button:hover {
+      background: #8f0b84;
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <h1 id="title">What is your bias in TWICE?</h1>
+    <p id="description">Let us know which member is your favorite!!!.</p>
+    
+    <!-- Survey Form -->
+    <form id="survey-form">
+
+      <!-- Name -->
+      <label id="name-label" for="name">Name</label>
+      <input 
+        type="text" 
+        id="name" 
+        placeholder="Enter your full name" 
+        required
+      >
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email</label>
+      <input 
+        type="email" 
+        id="email" 
+        placeholder="Enter your email address" 
+        required
+      >
+
+      <!-- Number -->
+      <label id="number-label" for="number">Age</label>
+      <input 
+        type="number" 
+        id="number" 
+        min="0" 
+        max="99" 
+        placeholder="Enter your age"
+      >
+
+      <!-- Dropdown -->
+      <label for="dropdown">Who's your bias?</label>
+      <select id="dropdown">
+        <option value="">Select one</option>
+        <option value="Nayeon">Nayeon</option>
+        <option value="Jeongyeon">Jeongyeon</option>
+        <option value="Momo">Momo</option>
+        <option value="Sana">Sana</option>
+        <option value="Jihyo">Jihyo</option>
+        <option value="Mina">Mina</option>
+        <option value="Dahyun">Dahyun</option>
+        <option value="Chaeyoung">Chaeyoung</option>
+        <option value="Tzuyu">Tzuyu</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <label>Which candybong do you prefer?</label>
+      <div class="options">
+        <input type="radio" name="a" value="Candy Bong"> Candy Bong<br>
+        <input type="radio" name="a" value="Candy Bong Z"> Candy Bong Z<br>
+        <input type="radio" name="a" value="Candy Bong Infinity"> Candy Bong Infinity
+      </div>
+
+      <!-- Checkboxes -->
+      <label>What is your favorite TWICE song?</label>
+      <div class="options">
+        <input type="checkbox" value="What is Love?"> What is Love?<br>
+        <input type="checkbox" value="Yes or Yes?"> Yes or Yes?<br>
+        <input type="checkbox" value="Feel Special"> Feel Special
+      </div>
+
+      <!-- Text area -->
+      <label for="comments">Message for TWICE</label>
+      <textarea 
+        id="comments" 
+        rows="4" 
+        placeholder="Give message to them..."
+      ></textarea>
+
+      <!-- Submit Button -->
+      <button id="submit" type="submit">Done</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
