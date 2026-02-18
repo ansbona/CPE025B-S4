@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Accessibility Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <span id="nav-label" class="screen-reader-text">Main Navigation Menu</span>
+            <ul class="navigation-menu" aria-labelledby="nav-label">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Quick links and resources can be found here.</p>
+        </aside>
+
+        <section class="main-content">
+            <h1>Welcome to Our Accessible Site</h1>
+            <p>This layout uses Flexbox to ensure a predictable reading order for all users.</p>
+            
+            <div class="high-contrast-text">
+                <p>This section demonstrates high contrast for better readability.</p>
+            </div>
+
+            <hr>
+
+            <section class="newsletter">
+                <h3>Stay Updated</h3>
+                <p>Fill out the form below to join our newsletter.</p>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="email-field">Email Address:</label>
+                        <input type="email" id="email-field" name="email" placeholder="e.g. name@example.com" required>
+                    </div>
+                    
+                    <button type="submit" aria-describedby="submit-help">Sign Up</button>
+                    <p id="submit-help" class="screen-reader-text">Submitting this form will sign you up for our weekly digital alerts.</p>
+                </form>
+            </section>
+        </section>
+    </main>
+
+</body>
+</html>

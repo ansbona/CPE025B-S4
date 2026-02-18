@@ -1,0 +1,96 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa; /* Light background for clean look */
+}
+
+/* 1. Apply Flexbox to the Header and Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* 1. Apply Flexbox to Nav (centering items) */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* 2. Style the Navigation Links */
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; /* Margin for spacing */
+    padding: 5px;   /* Padding for click area */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+/* 3. Apply CSS Grid to the Main Content Area */
+.projects {
+    display: grid;
+    /* Create responsive grid with three columns */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Gap between grid items */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 4. Style the Project Cards */
+.project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    /* Box shadow for subtle effect */
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    border-radius: 5px; /* Slight rounded corners */
+}
+
+.project-card h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* 5. Make the Layout Responsive */
+@media (max-width: 768px) {
+    /* Adjust grid layout for smaller screens */
+    .projects {
+        grid-template-columns: 1fr; /* Stack columns to 1 */
+    }
+
+    /* Ensure navigation bar becomes a column */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 5px 0;
+        display: block; /* Make links block level for easier tapping */
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}

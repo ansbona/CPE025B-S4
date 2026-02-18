@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fce4ec; /* Soft pink tint */
+    margin: 0;
+}
+
+header {
+    /* TWICE Official Colors Gradient: Apricot to Neon Magenta */
+    background: linear-gradient(135deg, #FFB114, #FF007F); 
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+h2 {
+    color: #FF007F; /* Neon Magenta */
+    border-bottom: 2px solid #FFB114; /* Apricot Underline */
+    padding-bottom: 5px;
+}
+
+main {
+    background: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+section {
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: "🍭 "; /* Using a lollipop emoji as a bullet */
+}
+
+li {
+    line-height: 1.8;
+}
+
+a:link, a:visited {
+    color: #FF007F;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFB114;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #555;
+}

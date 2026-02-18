@@ -1,0 +1,107 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header.visible {
+    opacity: 1;
+}
+
+.product-intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.product-image {
+    width: 200px;
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.buy-now {
+    background-color: #1DB954;
+    color: black;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #1ed760;
+    transform: scale(1.1);
+}
+
+.features {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    text-align: center;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-item {
+    background-color: #282828;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #121212;
+    transform: translateX(-100%);
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.feature-item:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.feature-item:nth-child(3) {
+    animation-delay: 1s;
+}
+
+footer {
+    background-color: #000000;
+    color: #b3b3b3;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 12px;
+}
